@@ -6,8 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
-    },
-    "composite": false
+    }
   },
-  "include": ["src"]
+  "include": ["src", "vitest.config.ts"]
 }
