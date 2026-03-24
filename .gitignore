@@ -56,3 +56,8 @@ secrets/
 
 # issues
 docs/issues
+
+# Admin-only tooling (local project management)
+tools/sync-github-issues.mjs
+docs/roadmap-issue-map.json
+docs/ROADMAP_TEMPLATES.md
