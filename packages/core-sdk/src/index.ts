@@ -10,6 +10,7 @@ export { AncoreClient, type AncoreClientOptions } from './ancore-client';
 
 // Session key helpers
 export { addSessionKey, type AddSessionKeyParams } from './add-session-key';
+export { revokeSessionKey, type RevokeSessionKeyParams } from './revoke-session-key';
 
 // Account transaction builder (wrapper around Stellar SDK's TransactionBuilder)
 export {
@@ -20,28 +21,26 @@ export {
 // Contract parameter encoding helpers
 export {
   toScAddress,
-  toScU64,
-  toScU32,
-  toScPermissionsVec,
   toScOperationsVec,
+  toScPermissionsVec,
+  toScU32,
+  toScU64,
 } from './contract-params';
 
 // Error types
 export {
   AncoreSdkError,
-  SimulationFailedError,
-  SimulationExpiredError,
   BuilderValidationError,
-  SessionKeyManagementError,
-  TransactionSubmissionError,
-  SessionKeyExecutionValidationError,
   SessionKeyExecutionError,
+  SessionKeyExecutionValidationError,
+  SessionKeyManagementError,
+  SimulationExpiredError,
+  SimulationFailedError,
+  TransactionSubmissionError,
 } from './errors';
 
 export {
-  AncoreClient,
   mapExecuteWithSessionKeyError,
-  type AncoreClientOptions,
   type ExecuteWithSessionKeyParams,
   type ExecuteWithSessionKeyResult,
   type SessionKeyExecutionLayer,
@@ -52,8 +51,8 @@ export {
 // Secure Storage
 export { SecureStorageManager } from './storage/secure-storage-manager';
 export type {
-  EncryptedPayload,
-  StorageAdapter,
   AccountData,
+  EncryptedPayload,
   SessionKeysData,
+  StorageAdapter,
 } from './storage/types';
