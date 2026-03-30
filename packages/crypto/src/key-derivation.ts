@@ -31,7 +31,7 @@ export function deriveKeypairFromMnemonic(mnemonic: string, index: number): Keyp
   // 0' - account level
   // 0 - change level (0 for external addresses)
   // {index} - address index
-  const path = `m/44'/148'/0'/0/${index}`;
+  const path = `m/44'/148'/${index}'`;
   const derivedKey = ed25519HdKey.derivePath(path, seed.toString('hex'));
 
   // Create Stellar keypair from the derived private key
