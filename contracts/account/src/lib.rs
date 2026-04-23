@@ -49,6 +49,8 @@ pub enum ContractError {
     InvalidSignature = 9,
     /// Invalid WASM hash provided for upgrade
     InvalidWasmHash = 10,
+    /// Invalid expiration time provided
+    InvalidExpiration = 11,
 }
 
 /// Event topic naming convention
